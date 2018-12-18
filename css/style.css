@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Raleway+Dots');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size:1.25em;
+    line-height:2em;
+    margin-bottom:2em;
+}
+
+    p.captionSource {
+        text-align:center;
+        font-style:italic;
+        display:block;
+        padding:2em 25em;
+        font-size:1em;
+        font-weight:500;
+        line-height:1.25em;
+    }
+
+p.captionSource a, p.captionSource a:hover {
+    color:#000;
+    text-decoration:none;
+    text-shadow:none;
+}
+
+p.small {
+    font-size:1em;
+    line-height:1.2em;
+}
+
+h1 {
+    font-family: 'Arista';
+    font-size:3em;
+    line-height:1.25em;
+    text-shadow:1px 1px 0 #000;
+}
+
+    h1 span {
+        font-family:"FacebookLetterFaces";
+        font-size:.9em;
+        color:#E9EBEE;
+        margin-left:.25em;
+        display:inline-block;
+    }
+
+h2 {
+    font-family: 'Arista';
+    font-size:2.75em;
+    line-height:1.15em;
+}
+h3 {
+    
+}
+
+h4 {
+    font-size:3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    text-align:center;
+    color:#000;
+    display:block;
+    margin:1em 0 0;
+    padding:0 3em;
+}
+
+h5 {
+    font-family: 'Arista';
+    font-size:2em;
+    text-shadow:1px 1px 0 #000;
+}
+
+a {
+    color:#E9EBEE;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration:none;
+}
+
+    a:hover {
+        color:#fff;
+        text-shadow:1px 1px 0 #000;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        text-decoration:none;
+    }
+
+.center {
+    text-align:center;
+}
+
+.noShadow {
+    text-shadow:none;
+}
+
+.border {
+    border:1px solid #4267B2;
+}
+
+header {
+    background-color:#4267B2;
+    color:#fff;
+    display:grid;
+    grid-template-columns: 40% 60%;
+    padding:.5em 1em;
+    height:85px;
+}
+
+    #logo {
+        grid-column:1;
+
+    }
+
+    nav {
+        grid-column:2;
+        margin-top:1em;
+    }
+
+        nav ul {
+            display:block;
+            overflow:hidden;
+            margin:0;
+            padding:0;
+            float:right;
+        }
+
+            nav ul li {
+                display:inline-block;
+                margin:0 1em;
+                font-family:"FacebookLetterFaces";
+                font-size:1.25em;
+                color:#E9EBEE;
+            }
+
+section {
+    display:block;
+    padding:4em 3em;
+    clear:both;
+    overflow:hidden;
+}
+
+    #introduction {
+        background-color:#E9EBEE;
+        padding:3em 2em 4em;
+        height:40em;
+    }
+
+    #background {
+        background-color:#4267B2;
+        color:#fff;
+    }
+
+        #background img {
+            display:block;
+            margin:1em auto;
+            float:none;
+            width:90%;
+            height:auto;
+        }
+
+    #videos {
+        background-color:#E9EBEE;
+        color:#365899;
+    }
+
+        video {
+            width: 90%;
+            float: none;
+            margin: 0 auto;
+        }
+
+        #videoBoxes, #conversationBoxes {
+            display:grid;
+            overflow:hidden;
+            grid-template-columns: 50% 50%;
+            color:#90949C;
+        }
+
+            #videoBoxes .left, #videoBoxes .right {
+                background:#fff;
+                display:block;
+                width:85%;
+                float:none;
+                margin:2em auto;
+                padding:1em;
+            }
+
+        img.vidBoxButtons {
+            display:block;
+            width:100%;
+            margin:1em auto;
+            float:none;
+        }
+
+        .vidBoxIntro {
+            display:grid;
+            grid-template-columns: 15% 85%;
+        }
+
+            .videoIcon {
+                grid-column: 1;
+            }
+
+            .videoText {
+                grid-column: 2;
+                padding-left:1em;
+            }
+
+                .videoText h3 {
+                    font-family: 'Raleway', sans-serif;
+                    font-weight:300;
+                    color:#90949C; 
+                }
+
+                    .videoText h3 span {
+                        color:#365899;
+                        font-weight:800;
+                    }
+
+        .vidBoxSlideshow {
+            display:block;
+            margin:2em 0;
+            padding:2em 1em;
+            background-color:#90949C;
+            border:1px solid #000;
+        }
+
+            .vidBoxSlideshow img {
+                display:block;
+                margin:1em auto;
+                float:none;
+                width:100%;
+                height:auto;
+            }
+
+.videoLibrary {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.videoLibrary div {
+    padding:0.5em;
+}
+
+    #statistics {
+        color:#4267B2;
+    }
+
+        #statBoxes {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap:30px;
+            margin:2em 0;
+        }
+
+            #statBoxes img {
+                object-fit: cover;
+                width:100%;
+            }
+
+
+    #conversation {
+        background-color:#4267B2;
+        color:#fff;
+    }
+
+        #conversationBoxes {
+            display:grid;
+            grid-template-columns:60% 40%;
+            color:#fff;
+        }
+
+#conversationBoxes .left {
+    padding:0 5em 0 0
+}
+
+#conversationBoxes img {
+    width:90%;
+    display:block;
+    margin:1em auto;
+    float:none;
+}
+
+#conversation iframe {
+    margin:0.5em auto;
+    display:block;
+    float:none;
+}
+
+
+    .left {
+        grid-column: 1;
+    }
+
+    .right {
+        grid-column: 2;
+    }
+
+
+footer {
+    text-align:center;
+    display:block;
+    padding:3em 0;
+}
+
+    footer h1 {
+        color:#365899;
+        margin:0;
+        text-shadow:none;
+    }
+
+        footer h1 span {
+            color:#4267B2;
+        }
+
+    footer p {
+        font-size:1.5em;
+        line-height:1.5em;
+    }
+
+footer a {
+    color:#4267B2;
+}
+
+footer a:hover {
+    color:#365899;
+}
+
+
+
+
+
+
+      .slider {
+          width: 95%;
+          margin: 0 auto;
+      }
+      
+      .slider iframe {
+          width:350px;
+          height:300px;
+      }
+      
+      .slick-slide {
+          margin: 0px 20px;
+      }
+      
+      .slick-slide img {
+          width: 100%;
+      }
+      
+      .vidBoxSlideshow .slick-prev:before,
+      .vidBoxSlideshow .slick-next:before {
+          color:#fff;
+      }
+
+      #introduction .slick-prev:before,
+      #introduction .slick-next:before {
+          color:#000;
+      }
+      
+      .slick-slide {
+          transition: all ease-in-out .3s;
+          opacity: .2;
+      }
+      
+      .slick-active {
+          opacity: .5;
+      }
+      
+      .slick-current {
+          opacity: 1;
+      }
+
+.fadeIn {
+    display:none;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+    #status {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        /* centers the loading animation horizontally one the screen */
+        top: 50%;
+        /* centers the loading animation vertically one the screen */
+        background-image: url(../img/loading.gif);
+        /* path to your loading animation */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:400px 400px;
+        margin: -200px 0 0 -200px;
+        /* is width and height divided by two */
+    }
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    text-align: center;
+    line-height: 30px;
+    background: #4267B2;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    padding:.25em 1em;
+    border:1px solid #000;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    font-family:"FacebookLetterFaces";
+    text-transform:uppercase;
+}
+    #back-to-top:hover {
+        background: #4267B2;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        text-shadow:none;
+    }
+    #back-to-top.show {
+        opacity: 1;
+    }
+    #content {
+        height: 2000px;
+    }
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Raleway Dots', cursive;
+*/
+
+@font-face {
+    font-family: 'Arista';
+    src:url('../fonts/Arista.ttf.woff') format('woff'),
+        url('../fonts/Arista.ttf.svg#Arista') format('svg'),
+        url('../fonts/Arista.ttf.eot'),
+        url('../fonts/Arista.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family:"FacebookLetterFaces";
+    src:url("../fonts/FACEBOLF.eot?") format("eot"),
+        url("../fonts/FACEBOLF.woff") format("woff"),
+        url("../fonts/FACEBOLF.ttf") format("truetype"),
+        url("../fonts/FACEBOLF.svg#FacebookLetterFaces") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+
+
+
+
+/* #Media Queries
+================================================== */
+@media only screen and (max-width: 1279px) {
+    h1 {
+        font-size:2.5em;
+    }
+    
+    h4 {
+        padding:0 1em;
+        font-size:2.5em;
+    }
+    
+    p.captionSource {
+        padding:1em;
+    }
+    
+    header {
+        height:65px;
+    }
+    
+    #conversationBoxes {
+        grid-template-columns: 100%;
+    }
+    
+    .left {
+        grid-column:1;
+        grid-row:1;
+    }
+    
+        #conversationBoxes .left {
+            padding:1em;
+        }
+    
+    .right {
+        grid-column:1;
+        grid-row:2;
+        padding:0 5em;
+    }
+    
+    #twitter-widget-0 {
+        width:100%!important;
+        margin:3em auto!important;
+    }
+
+    
+}
+	
+
+
+
+@media only screen and (max-width: 959px) {
+    h1 {
+        font-size:1.75em;
+    }
+    
+    nav {
+        margin-top:0;
+    }
+    
+    nav ul li {
+        font-size:1em;
+    }
+       
+    #introduction {
+        height:35em;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    * {
+        text-shadow:none;
+    }
+    
+    h1 {
+        text-align:center;
+    }
+    
+    h4 {
+        font-size:1.5em;
+        padding:0 .5em;
+    }
+    
+    p {
+        font-size:1.1em;
+        line-height:1.25em;
+    }
+    
+        footer p {
+            font-size:1.3em;
+        }
+
+    header {
+        grid-template-columns: 100%;
+        height:80px;
+    }
+    
+    #logo {
+        grid-column:1;
+        grid-row:1;
+    }
+    
+    nav {
+        grid-column:1;
+        grid-row:2;
+    }
+    
+    nav ul {
+        display:block;
+        float:none;
+        margin:.25em auto;
+        text-align:center;
+    }
+    
+    nav ul li {
+        text-align:center;
+        margin:0 .5em;
+    }
+
+    .right {
+        padding:0 1em;
+    }
+}
+
